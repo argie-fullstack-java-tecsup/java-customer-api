@@ -1,7 +1,7 @@
-package com.bc_java_tecsup.api_tarea.exception;
+package com.api_tarea.exception;
 
-import com.bc_java_tecsup.api_tarea.customer.errors.CustomerActiveDeletionNotAllowedException;
-import com.bc_java_tecsup.api_tarea.customer.errors.CustomerNotFoundException;
+import com.api_tarea.customer.errors.CustomerActiveDeletionNotAllowedException;
+import com.api_tarea.customer.errors.CustomerNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;

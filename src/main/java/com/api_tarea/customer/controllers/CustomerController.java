@@ -1,9 +1,9 @@
-package com.bc_java_tecsup.api_tarea.customer.controllers;
+package com.api_tarea.customer.controllers;
 
-import com.bc_java_tecsup.api_tarea.customer.dto.CustomerRequest;
-import com.bc_java_tecsup.api_tarea.customer.dto.CustomerResponse;
-import com.bc_java_tecsup.api_tarea.customer.entities.Customer;
-import com.bc_java_tecsup.api_tarea.customer.services.CustomerService;
+import com.api_tarea.customer.dto.CustomerRequest;
+import com.api_tarea.customer.dto.CustomerResponse;
+import com.api_tarea.customer.entities.Customer;
+import com.api_tarea.customer.services.CustomerService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;

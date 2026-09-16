@@ -1,4 +1,4 @@
-package com.bc_java_tecsup.api_tarea.exception;
+package com.api_tarea.exception;
 
 import java.time.LocalDateTime;
 import java.util.Map;

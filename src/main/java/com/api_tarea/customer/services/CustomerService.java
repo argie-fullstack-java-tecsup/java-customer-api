@@ -1,12 +1,12 @@
-package com.bc_java_tecsup.api_tarea.customer.services;
+package com.api_tarea.customer.services;
 
 import org.springframework.stereotype.Service;
 
-import com.bc_java_tecsup.api_tarea.customer.entities.Customer;
-import com.bc_java_tecsup.api_tarea.customer.repositories.CustomerRepository;
+import com.api_tarea.customer.entities.Customer;
+import com.api_tarea.customer.repositories.CustomerRepository;
 
-import com.bc_java_tecsup.api_tarea.customer.errors.CustomerActiveDeletionNotAllowedException;
-import com.bc_java_tecsup.api_tarea.customer.errors.CustomerNotFoundException;
+import com.api_tarea.customer.errors.CustomerActiveDeletionNotAllowedException;
+import com.api_tarea.customer.errors.CustomerNotFoundException;
 
 import java.util.List;
 

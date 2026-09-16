@@ -1,4 +1,4 @@
-package com.bc_java_tecsup.api_tarea.customer.dto;
+package com.api_tarea.customer.dto;
 
 // DTO
 // Data Transfer Object

@@ -1,42 +1,37 @@
-package com.bc_java_tecsup.api_tarea.customer.dto;
+package com.api_tarea.customer.entities;
 
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
+import jakarta.persistence.*;
 
-public class CustomerRequest {
+@Entity
+@Table(name = "customers")
+public class Customer {
 
-  @NotBlank
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
+
   private String name;
-
-  @NotBlank
   private String lastname;
 
-  @NotBlank
-  @Email
-  private String email;
-
-  @NotBlank
+  @Column(name = "document_number")
   private String documentNumber;
 
+  private String email;
   private String address;
   private String ruc;
 
-  @NotNull
+  @Column(name = "is_active")
   private Boolean active;
 
-  public CustomerRequest() {
+  public Customer() {
   }
 
-  public CustomerRequest(String name, String lastname, String email, String documentNumber,
-                         String address, String ruc, Boolean active) {
-    this.name = name;
-    this.lastname = lastname;
-    this.email = email;
-    this.documentNumber = documentNumber;
-    this.address = address;
-    this.ruc = ruc;
-    this.active = active;
+  public Long getId() {
+    return id;
+  }
+
+  public void setId(Long id) {
+    this.id = id;
   }
 
   public String getName() {
@@ -55,20 +50,20 @@ public class CustomerRequest {
     this.lastname = lastname;
   }
 
-  public String getEmail() {
-    return email;
-  }
-
-  public void setEmail(String email) {
-    this.email = email;
-  }
-
   public String getDocumentNumber() {
     return documentNumber;
   }
 
   public void setDocumentNumber(String documentNumber) {
     this.documentNumber = documentNumber;
+  }
+
+  public String getEmail() {
+    return email;
+  }
+
+  public void setEmail(String email) {
+    this.email = email;
   }
 
   public String getAddress() {
