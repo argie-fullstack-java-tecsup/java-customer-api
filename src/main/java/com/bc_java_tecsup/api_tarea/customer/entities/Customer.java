@@ -1,14 +1,30 @@
-package com.bc_java_tecsup.api_tarea.customer;
+package com.bc_java_tecsup.api_tarea.customer.entities;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "customers")
 public class Customer {
+
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
+
   private String name;
   private String lastname;
-  private String document_number;
+
+  @Column(name = "document_number")
+  private String documentNumber;
+
   private String email;
   private String address;
   private String ruc;
-  private Boolean is_active;
+
+  @Column(name = "is_active")
+  private Boolean active;
+
+  public Customer() {
+  }
 
   public Long getId() {
     return id;
@@ -34,12 +50,12 @@ public class Customer {
     this.lastname = lastname;
   }
 
-  public String getDocument_number() {
-    return document_number;
+  public String getDocumentNumber() {
+    return documentNumber;
   }
 
-  public void setDocument_number(String document_number) {
-    this.document_number = document_number;
+  public void setDocumentNumber(String documentNumber) {
+    this.documentNumber = documentNumber;
   }
 
   public String getEmail() {
@@ -66,12 +82,11 @@ public class Customer {
     this.ruc = ruc;
   }
 
-  public Boolean getIs_active() {
-    return is_active;
+  public Boolean getActive() {
+    return active;
   }
 
-  public void setIs_active(Boolean is_active) {
-    this.is_active = is_active;
+  public void setActive(Boolean active) {
+    this.active = active;
   }
 }
-
