@@ -1,4 +1,4 @@
-package com.bc_java_tecsup.demo.product;
+package com.demo.product;
 
 import org.springframework.stereotype.Service;
 
