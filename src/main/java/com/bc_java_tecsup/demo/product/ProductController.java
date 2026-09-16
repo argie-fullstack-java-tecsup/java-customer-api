@@ -4,7 +4,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-// GESTION DE LAS RUTAS
 // Etiqueta para hacer los requests HTTP
 @RestController
 // Clase controladora
@@ -33,9 +32,6 @@ public class ProductController {
     // TODO: PROFUNDIZAR EN LOS STREAMS (PROGRAMACIÓN FUNCIONAL)
     return productService.findById(id);
   }
-
-
-
 
   // Para crear se usa esta etiqueta
   @PostMapping("/products")
