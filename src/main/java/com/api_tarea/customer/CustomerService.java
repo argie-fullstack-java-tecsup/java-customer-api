@@ -1,4 +1,4 @@
-package com.bc_java_tecsup.api_tarea.customer;
+package com.api_tarea.customer;
 
 import org.springframework.stereotype.Service;
 
